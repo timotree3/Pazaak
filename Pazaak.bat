@@ -1,0 +1,2 @@
+python Pazaak.py
+pause
