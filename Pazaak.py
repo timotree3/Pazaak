@@ -13,6 +13,8 @@ class Player():
     def __str__(self):
         return 'Player #' + str(self.number)
     def draw(self, index):
+        if self.total <= 20:
+            self.over = False
         if self.over == True:
             print(str(self), "has stopped taking turns as they have not gone back below 20.")
             self.playing = False
@@ -31,8 +33,10 @@ class Player():
     def showhand(self):
         return 'Empty!' if len(self.hand) == 0 else ' | '.join(self.hand)
     def check(self):
+        if self.total == 20:
+            self.playing = False
         if len(self.cards) == 9:
-            print(str(self), "has stopped taking turns anymore as their table is full.")
+            print(str(self), "has stopped taking turns as their play area is full.")
             self.playing = False
             if self.total <= 20:
                 return True
