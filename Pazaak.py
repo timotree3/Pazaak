@@ -35,6 +35,7 @@ class Player():
     def check(self):
         if self.total == 20:
             self.playing = False
+            return True
         if len(self.cards) == 9:
             print(str(self), "has stopped taking turns as their play area is full.")
             self.playing = False
