@@ -105,10 +105,10 @@ while True:
             break
         print(str(player) + " will not get a turn because they are out of the game! ")
         player = players.pop(0); players.append(player)
-    if i == len(players):
-        break
     sleep(1)
     system(clearCode)
+    if i == len(players):
+        break
     print(str(player) + ', it is now your turn!')
 for player in players:
     if player.total <= 20 and len(player.cards) == 9:
