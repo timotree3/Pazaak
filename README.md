@@ -1,6 +1,6 @@
 ## Pazaak
 ---
-#### An implementation of the gambling game in Star Wars "Pazaak"
+#### An implementation of the trading card game in Star Wars "Pazaak"
 ## Objective:
 When the game ends, the player that has the score closest to (without going above) 20, wins. The game ends when one player has reached a score of 20 or all players either have a score above 20 or have chosen to stand.
 ## Turns:
